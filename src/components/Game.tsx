@@ -12,7 +12,7 @@ function BoxMove() {
   const loadingPercentage = Math.round(loadingProgression * 100);
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-screen">
       {isLoaded === false && (
         <div className="flex justify-center items-center top-[40vh]">
           <p>Loading... ({loadingPercentage}%)</p>
