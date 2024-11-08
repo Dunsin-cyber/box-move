@@ -4,10 +4,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function BoxMove() {
   const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
-    loaderUrl: "build/build.loader.js",
-    dataUrl: "build/build.data.br",
-    frameworkUrl: "build/build.framework.js.br",
-    codeUrl: "build/build.wasm.br",
+    loaderUrl: "build/box-move.loader.js",
+    dataUrl: "build/box-move.data",
+    frameworkUrl: "build/box-move.framework.js",
+    codeUrl: "build/box-move.wasm",
   });
   const loadingPercentage = Math.round(loadingProgression * 100);
 
